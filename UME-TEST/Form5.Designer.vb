@@ -22,9 +22,28 @@ Partial Class Form5
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form5"
+        Button1 = New Button()
+        SuspendLayout()
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(108, 59)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(429, 114)
+        Button1.TabIndex = 0
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Form5
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(Button1)
+        Name = "Form5"
+        Text = "Form5"
+        ResumeLayout(False)
     End Sub
+
+    Friend WithEvents Button1 As Button
 End Class
